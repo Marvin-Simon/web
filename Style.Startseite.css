@@ -1,0 +1,247 @@
+* Um den hintergrund außerhalb des vidos schwarz zu machen */
+
+body {
+    background-color: black;
+  }
+  img {
+
+ max-width: 300px;
+ max-height: 205px;
+
+
+  }
+
+  
+  .Logo{
+    float: left;
+    padding: 1px 1px 1px 1px;
+    background: transparent;
+    height: 300px;
+    width: 300px;
+    position: relative;
+  }
+  
+  header{
+    background:transparent;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 66.38px; 
+    text-align: right;
+    transition: all 200ms;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  }
+  
+  
+  header nav#normal {
+      color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+     
+  }
+  
+  
+  header nav#normal ul {
+      margin: 0;
+      padding: 0;
+      transition: all 300ms;
+      display: inline-block;
+     
+  }
+  
+  
+  header nav#normal ul li {
+      margin: 0;
+      padding: 0;   
+      float: left;
+      list-style: none;
+      position: relative;
+      transition: all 300ms;
+     
+  }
+  
+  header nav#normal ul li a {
+      display: inline-block;
+      padding:  21.7px;
+      float: left;
+      min-width: 120px;
+      text-align: center;
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+      margin: 0 1px 0 0;
+      text-decoration: none;
+      background:rgba(0, 0, 0, 0.5);
+      font-weight: 300;
+      transition: all 300ms;
+  
+  }
+  /*um die position der Untergruppe zu zentieren und Auszublenden*/
+  
+  header nav#normal ul li:hover > a {
+  background:rgba(0, 208, 255, 0.6) ;
+  }
+  
+  
+  header nav#normal ul li ul {
+  overflow: hidden;
+  position:  absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transition: all 300ms;
+  max-height: 0;
+  
+  }
+  
+  
+  header nav#normal ul li ul li {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  } 
+
+  /*um die Untergruppe beim hovern einzublenden*/
+  
+  header nav#normal ul li:hover > ul {
+  max-height: 500px;
+  
+  }
+  
+  .Background-Video{
+    width: 100%;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:-1;
+    
+}
+
+.Background-Video video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index:-1;
+   
+}
+
+
+.Video2{
+    width: 100%;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:0;
+    
+}
+
+.Video2 video{
+    position:absolute;
+    top: 1450px;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index:-1;
+   
+}
+
+#box {
+
+position:absolute;
+font-size: 90px;
+top: 150px;
+left: 770px;
+color: white;
+
+
+
+}
+
+
+#box10 {
+position:absolute;
+    font-size: 90px;
+    top: 1250px;
+    left: 630px;
+    color: white;
+
+}
+
+.Modelle{
+      text-align: center;
+      width: auto;
+      padding-top: 250px;
+      padding-left: 340px;
+      max-height:359.775px;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+      
+  }   
+  
+  .Modelle ul{
+  padding: 0;
+  margin: 0;
+  
+  
+  }
+  
+  
+  .Modelle ul li{
+  width: 20%;
+  list-style: none;
+  float: left;
+  max-width:400px;
+  min-width:400px;
+  
+  }
+  
+  .Modelle ul li a{
+      text-decoration: none;
+  }
+  
+  
+  .Modell{
+      background: rgba(79, 79, 79, 0.719);
+      margin: 20px;
+      padding: 0px 0 50px 0;
+      color: white;
+      overflow: hidden;
+      width: 300px;
+      height: 300px;
+     
+  }
+  
+  
+  
+  .Modell p{
+      color:  white;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 25px;
+   
+     
+  }
+  
+  .Modell:hover{
+      transform: scale(1.1);
+      background-color: rgba(0, 208, 255, 0.6);
+  }
+
+/*um unnütze infos auszublenden*/
+
+  @media print {
+     header  {
+        display: none;
+      } 
+
+  @media print {   
+      .Modelle ul li{
+          width: 100px;
+          height: 330px;
+          
+      }
